@@ -1,0 +1,263 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box;
+  font-weight: 400;
+  list-style-type: none;
+}
+
+:root {
+  --bg-color: #000;
+  --secondary-bg-color: #242424;
+  --font-color: #ffffffb6;
+  --font-hover-color: #ffffffda;
+  --btn-color: #0000ffe0;
+  --btn-hover-color: #0000ff;
+}
+
+body {
+  background-color: var(--bg-color);
+  font: 1.5rem 'SF Pro';
+  color: var(--font-color);
+  /* overflow-x: hidden; */
+}
+
+input, button, textarea {
+  font: inherit;
+  font-size: 1.3rem;
+  width: fit-content;
+}
+
+input, textarea {
+  margin: .5rem 2rem;
+  border-radius: 1rem;
+  padding: .2rem 1rem;
+}
+
+button {
+  padding: .2rem 1rem;
+  margin: .5rem 1rem;
+  border-radius: .7rem;
+  background-color: var(--btn-color);
+  border-style: none;
+}
+
+button:is(:hover, :focus, :active ) {
+  background-color: var(--btn-hover-color);
+}
+
+button[type="submit"] {
+  padding: .2rem 4rem;
+  margin: 2rem;
+}
+
+.center {
+  display: grid;
+  place-content: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.page {
+  /* width: 100vw; */
+  min-height: 100vh;
+}
+
+.page-header {
+  background-color: var(--secondary-bg-color);
+  padding: .5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  z-index: 1;
+}
+
+.dialog {
+  z-index: 1;
+  background-color: var(--secondary-bg-color);
+  width: 85vw;
+  border-radius: 1rem;
+  padding: 1rem 2rem;
+}
+
+.dialog-title {
+  padding: 2rem;
+  /* border-bottom: 1px solid var(--font-color); */
+}
+
+.anchor {
+  background-color: transparent;
+  color: var(--font-color);
+  text-decoration: underline;
+}
+
+.anchor:is(:hover, :active, :focus) {
+  background-color: transparent;
+  color: var(--font-hover-color);
+}
+
+.flex-space-around {
+  display: flex;
+  justify-content: space-around;
+}
+
+.flex-space-around {
+  display: flex;
+  justify-content: space-between;
+}
+
+.frosted {
+  background-color: #ffffff1e;
+  backdrop-filter: blur(5px);
+}
+
+.navbar-list {
+  z-index: 1;
+  padding: 1rem 0;
+
+  background-color: var(--secondary-bg-color);
+  width: 100vw;
+  list-style-type: none;
+ 
+  display: flex;
+  justify-content: space-around;
+
+  position: fixed;
+  bottom: 0;
+}
+
+.message {
+  background-color: var(--secondary-bg-color);
+  padding: 1rem;
+  margin-top: 1rem;
+  border-radius: 1rem;
+
+  width: 85vw;
+}
+
+.message-body {
+  margin-top: 1.2rem;
+  overflow-wrap: break-word;
+}
+
+.trim-top-bottom {
+  padding-top: 5rem;
+  padding-bottom: 6.5rem;
+}
+
+.la-angle-left, .la-thumbs-up, .la-thumbs-down {
+  padding: .5rem 1rem .5rem 0rem;
+  text-decoration: none;
+}
+
+.la-thumbs-up {
+  color: green;
+}
+
+.la-thumbs-down {
+  color: red;
+}
+
+.la-reply {
+  color: blue;
+}
+
+.list-element {
+  background-color: #ffffff1e;
+  backdrop-filter: blur(5px);
+  list-style-type: none;
+  width: 80vw;
+  max-width: calc(100vh-20px);
+  padding: .8rem 3rem;
+  border-bottom: 1px solid #ffffff79;
+}
+/* border-radius: 2rem; */
+
+.list-element:first-child {
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+}
+
+
+.list-element:last-child {
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  border-style: none;
+}
+
+.list-element:is(:hover, :active, :focus) {
+  background-color: #161616;
+}
+
+/* .list-element:first-child: */
+
+.top {
+  display: grid;
+  place-content: start center;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.flex-left {
+  display: flex;
+  align-items: start;
+}
+
+.link {
+  display: block;
+}
+
+.simple {
+  text-decoration: none;
+  color: var(--font-color);
+  height: 100%;
+  /* width: 100%; */
+  background-color: transparent;
+}
+
+.simple:is(:hover, :focus) {
+  cursor:pointer;
+  color: var(--font-hover-color);
+  background-color: transparent;
+}
+
+.width-80 {
+  width: 80%;
+}
+
+textarea {
+  width: 75vw;
+}
+
+.warning {
+  text-align: center;
+  font-size: .8rem;
+  color: red;
+}
+
+.vanila {
+  font-weight: 300;
+  background-color: transparent;
+}
+
+.vanila:is(:hover, :focus) {
+  background-color: transparent;
+}
+
+.white {
+  color: var(--font-color);
+}
+
+i.las:hover {
+  color: #ffffff;
+}
+
